@@ -1,0 +1,57 @@
+:root {
+  --sticker: #f2c230;
+  --tinta: #1e1b16;
+  --papel: #fffdf7;
+  --alerta: #d7263d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: var(--sticker);
+  color: var(--tinta);
+  font-family: "Archivo", system-ui, sans-serif;
+}
+
+.etiqueta {
+  position: relative;
+  width: min(420px, 100%);
+  padding: 40px 32px 32px;
+  background: var(--papel);
+  border: 2px solid var(--tinta);
+  border-radius: 4px 20px 20px 4px;
+  box-shadow: 10px 10px 0 var(--tinta);
+}
+
+.furo {
+  position: absolute;
+  top: 20px;
+  left: 14px;
+  width: 14px;
+  height: 14px;
+  background: var(--sticker);
+  border: 2px solid var(--tinta);
+  border-radius: 50%;
+}
+
+h1 {
+  margin: 0 0 8px;
+  padding-left: 36px;
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.sub {
+  margin: 0 0 28px;
+  max-width: 34ch;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
