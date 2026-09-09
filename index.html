@@ -14,6 +14,18 @@
     <span class="furo" aria-hidden="true"></span>
     <h1>Calculadora de desconto</h1>
     <p class="sub">Descubra quanto você paga depois do desconto.</p>
+        <form id="form" novalidate>
+      <div class="campo">
+        <label for="preco">Preço original (R$)</label>
+        <input id="preco" type="number" min="0" step="0.01" placeholder="199,90" />
+      </div>
+      <div class="campo">
+        <label for="percentual">Percentual de desconto</label>
+        <input id="percentual" type="number" min="0" max="100" step="0.1" placeholder="15" />
+      </div>
+      <button type="submit">Calcular desconto</button>
+      <p class="erro" id="erro" hidden></p>
+    </form>
   </main>
 </body>
 </html>
