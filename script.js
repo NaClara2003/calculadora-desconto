@@ -26,7 +26,7 @@ form.addEventListener("submit", (evento) => {
   }
 
   erro.hidden = true;
-  document.getElementById("percentual-aplicado").textContent = percentual;
+  document.getElementById("percentual-aplicado").textContent = `${percentual}%`;
   document.getElementById("preco-original").textContent = brl.format(preco);
   document.getElementById("valor-final").textContent = brl.format(
     calcularValorFinal(preco, percentual)
