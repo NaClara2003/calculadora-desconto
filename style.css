@@ -55,3 +55,82 @@ h1 {
   font-size: 0.95rem;
   line-height: 1.5;
 }
+
+.campo + .campo {
+  margin-top: 16px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  padding: 12px 14px;
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  border: 2px solid var(--tinta);
+  border-radius: 2px;
+}
+
+input:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--alerta);
+  outline-offset: 2px;
+}
+
+button {
+  width: 100%;
+  margin-top: 24px;
+  padding: 14px;
+  font: inherit;
+  font-weight: 800;
+  color: var(--papel);
+  background: var(--tinta);
+  border: 2px solid var(--tinta);
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--alerta);
+  border-color: var(--alerta);
+}
+
+.erro {
+  margin: 16px 0 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--alerta);
+}
+
+.resultado {
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 2px dashed var(--tinta);
+}
+
+.desconto-aplicado {
+  margin: 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.preco-antigo {
+  margin: 4px 0 0;
+  font-size: 0.95rem;
+  text-decoration: line-through;
+}
+
+.valor-final {
+  margin: 4px 0 0;
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: var(--alerta);
+}
