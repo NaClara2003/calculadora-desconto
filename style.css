@@ -107,3 +107,30 @@ button:hover {
   font-weight: 600;
   color: var(--alerta);
 }
+
+.resultado {
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 2px dashed var(--tinta);
+}
+
+.desconto-aplicado {
+  margin: 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.preco-antigo {
+  margin: 4px 0 0;
+  font-size: 0.95rem;
+  text-decoration: line-through;
+}
+
+.valor-final {
+  margin: 4px 0 0;
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: var(--alerta);
+}
