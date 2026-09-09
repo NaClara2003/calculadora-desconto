@@ -134,3 +134,9 @@ button:hover {
   letter-spacing: -0.03em;
   color: var(--alerta);
 }
+
+.economia {
+  margin: 12px 0 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
