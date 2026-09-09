@@ -8,6 +8,10 @@ function calcularValorFinal(preco, percentual) {
   return preco - (preco * percentual) / 100;
 }
 
+function calcularEconomia(preco, percentual) {
+  return (preco * percentual) / 100;
+}
+
 form.addEventListener("submit", (evento) => {
   evento.preventDefault();
 
@@ -26,6 +30,9 @@ form.addEventListener("submit", (evento) => {
   document.getElementById("preco-original").textContent = brl.format(preco);
   document.getElementById("valor-final").textContent = brl.format(
     calcularValorFinal(preco, percentual)
+  );
+  document.getElementById("economia").textContent = brl.format(
+    calcularEconomia(preco, percentual)
   );
   resultado.hidden = false;
 });
